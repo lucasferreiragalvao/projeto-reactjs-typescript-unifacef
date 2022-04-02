@@ -18,7 +18,7 @@ const history = syncHistoryWithStore(browserHistory, router);
 ReactDOM.render(
   <React.StrictMode>
     <Provider {...store}>
-      <Loading></Loading>
+      <Loading/>
       <Router history={history}>
         <Routes />
       </Router>
