@@ -22,6 +22,9 @@ export default class Combustivel extends React.Component<Props>{
       submit();
     }
 
+    const breakCode = () => {
+      throw new Error('ERRROOOOOS');
+    }
     return (
       <Container>
         <Grid divided='vertically'>
@@ -62,6 +65,7 @@ export default class Combustivel extends React.Component<Props>{
             </Form.Field>
           </Form.Group>
           <Button type='submit'>Consultar</Button>
+          <Button type='button' onClick={breakCode}>ERRO</Button>
         </Form>
       </Container>
     );
